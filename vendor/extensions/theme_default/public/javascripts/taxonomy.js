@@ -48,7 +48,7 @@ var handle_created = function(id,result) {
 }
 
 var handle_rename = function(li, tree, rb) {
-  var name = jQuery(li).children().text();
+  var name = jQuery(li).children('a:eq(0)').text();
   name = jQuery.trim(name);
 
   if (creating){
